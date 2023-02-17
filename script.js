@@ -65,15 +65,8 @@ function copiar(){
     inputMensaje.focus();
 }
 
-function escuchar(){
-    var mensajeEncriptado = inputResultado.value;
-    let msg = new SpeechSynthesisUtterance();
-    msg.text = mensajeEncriptado;
-    msg.lang = "es-Es";
-    window.speechSynthesis.speak(msg);
-}
+
 
 btnEncriptar.onclick = encriptar;
 btnDesencriptar.onclick = desencriptar;
 btnCopiar.onclick = copiar;
-btnEscuchar.onclick = escuchar;
