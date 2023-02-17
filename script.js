@@ -46,7 +46,8 @@ function encriptar(){
     
     inputResultado.value = mensajeEncriptado;
 }
-
+// verificar los scripts de la solucion como hace para desvanecer 
+// la imagen al momento de dar el resultado
 function desencriptar(){
     var mensajeEncriptado = inputMensaje.value;
     var mensaje = mensajeEncriptado.replaceAll("enter","e")
