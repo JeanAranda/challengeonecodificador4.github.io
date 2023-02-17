@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="/imagenes/Frame 6.png" alt="">
+    </header>
+    <main class="contenedor-principal">
+        <div class="tarjeta num1">
+            <input class="text-area" cols="30" rows="10" type="text" id="mensaje" placeholder="Ingrese el texto aqui!!!">
+            <div class="contenedor-errores"></div>
+            <div class="contenedor-botones">
+                <button id="encriptar">Encriptar</button>
+                <button id="desencriptar">Desencriptar</button>
+            </div>
+        </div>
+        <div class="tarjeta num2">
+            <input class="mensaje" type="text" id="resultado" placeholder="Resultado.....!">
+            <div class="contenedor-bot">
+                <button id="copiar">Copiar</button>
+                <button id="escuchar">Escuchar</button>
+            </div>
+        </div>
+    </main>
+    <script src="/script.js"></script>
+</body>
+</html>
