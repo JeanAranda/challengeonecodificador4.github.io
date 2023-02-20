@@ -8,29 +8,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
-    <title>Encriptador</title>
+    <title>Mi encriptador JP</title>
 </head>
 <body>
     <header>
-        <img class="logo" src="/imagenes/Frame 6.png" alt="">
+        <img class="logo" src="/imagenes/Logo.png" alt="logo de alura" >
     </header>
-    <main class="contenedor-principal">
-        <div class="tarjeta num1">
-            <input class="text-area" cols="30" rows="10" type="text" id="mensaje" placeholder="Ingrese el texto aqui!!!">
-            <div class="contenedor-errores"></div>
-            <div class="contenedor-botones">
-                <button id="encriptar">Encriptar</button>
-                <button id="desencriptar">Desencriptar</button>
-            </div>
-        </div>
-        <div class="tarjeta num2">
-            <input class="mensaje" type="text" id="resultado" placeholder="Resultado.....!">
-            <div class="contenedor-bot">
-                <button id="copiar">Copiar</button>
-                
-            </div>
-        </div>
+    <main>
+            <section>
+                <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                <div>
+                    <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
+                </div>
+                <div class="botones">
+                    <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                </div>
+            </section>
+            <section>
+                <textarea class="mensaje" cols="20" rows="10"></textarea>
+                <div>
+                    <button class="copiar" onclick="copiar()">Copiar</button>
+                </div>
+            </section>
+        
     </main>
-    <script src="/script.js"></script>
+<script src="/script.js"></script>
 </body>
 </html>
